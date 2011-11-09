@@ -1,4 +1,4 @@
-#!/usr/bin/python26
+#!/usr/bin/python2
 #
 # aud-twitter: Publish on twitter what you are listening on Audacious
 # based on mpd-twitter by Zerial

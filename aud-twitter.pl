@@ -9,8 +9,8 @@ my $config = Config::Tiny->read("$ENV{HOME}/.aud-twitter")
 my %oauth = map { $_ => ($config->{connect_params}->{$_} or die "invalid config: missing $_\n") }
     qw(consumer_key consumer_secret access_token access_token_secret);
 
-my $tweet_before = $config->{tweet_params}->{BEFORE};
-my $tweet_after = $config->{tweet_params}->{AFTER};
+my $tweet_before = $config->{tweet_params}->{before};
+my $tweet_after = $config->{tweet_params}->{after};
 my $tweet_extra = join ' ', @ARGV;
 
 my $curr_song = `audtool current-song`;
